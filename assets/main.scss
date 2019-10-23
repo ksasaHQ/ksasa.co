@@ -1,3 +1,9 @@
+/*
+
+Reset CSS and define standard colours etc. Actual styling is done in the vue components such as default.vue
+
+ */
+ 
 :root {
   font-family: 'Chivo', sans-serif;
   font-size: 20px;
@@ -101,26 +107,7 @@ section {
   display: block;
 }
 
-a {
-  color: var(--main-text-colour);
-  text-decoration: none;
-  &:hover {
-    border-bottom: solid var(--main-text-colour) 1px;
-    box-shadow: 0 -0.1em 0 var(--main-text-colour) inset;
-  }
-}
 
-section {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 2rem;
-  position: relative;
-  * {
-    z-index: 1;
-  }
-}
 
 .page-enter-active {
   animation: upwardsIn 0.5s ease-out both;

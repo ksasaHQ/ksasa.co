@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="layout_default">
     <masthead />
     <nuxt />
     <imprint />
@@ -16,4 +16,34 @@ export default {
   }
 }
 </script>
-<style></style>
+<style lang="scss">
+#layout_default > div {
+  min-height: calc(100vh - var(--footer-height));
+
+  * {
+    z-index: 1;
+  }
+
+  & > *:first-child {
+    padding-top: 5rem; // make space for masthead
+  }
+}
+
+a {
+  color: var(--main-text-colour);
+  text-decoration: none;
+  &:hover {
+    border-bottom: solid var(--main-text-colour) 1px;
+    box-shadow: 0 -0.1em 0 var(--main-text-colour) inset;
+  }
+}
+
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+</style>
