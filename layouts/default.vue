@@ -3,6 +3,12 @@
     <masthead />
     <nuxt />
     <imprint />
+    <div
+      id="snipcart"
+      hidden
+      data-api-key="M2YwOGIxZDYtNTE3NC00MDY0LTkxNTItOTMwOTViOWFlNjVhNjM2ODE4MTgxMzg0OTUwNjUz"
+    ></div>
+    <script src="https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.js"></script>
   </div>
 </template>
 

@@ -19,6 +19,10 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Chivo:400,700'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.css'
       }
     ]
   },

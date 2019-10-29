@@ -17,9 +17,18 @@
         tolle Sachen über diesen Kalender. Am Wochende sollte man sich nicht so
         viel vornehmen. Deshalb sind sie durchgestrichen.
       </p>
-      <p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="calendar"
+        data-item-price="19.99"
+        data-item-url="/"
+        data-item-description="Wandkalender für das Jahr 2020"
+        data-item-image="_nuxt/static/images/zwoelf/zwoelf-front-hero.JPG"
+        data-item-name="Wandkalender 2020"
+      >
         Kaufen
-      </p>
+      </button>
+      <button class="snipcart-checkout">Click here to checkout</button>
     </section>
     <section>
       <img src="~/static/images/zwoelf/zwoelf-detail.JPG" />
