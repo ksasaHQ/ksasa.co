@@ -6,7 +6,7 @@
   </header>
 </template>
 
-<style>
+<style scoped>
 header {
   text-align: center;
   position: fixed;

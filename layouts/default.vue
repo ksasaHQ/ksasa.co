@@ -17,7 +17,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style scoped lang="scss">
 #layout_default > div {
   min-height: calc(100vh - var(--footer-height));
 

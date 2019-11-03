@@ -30,24 +30,41 @@
       </button>
     </section>
     <section>
-      <img src="~/static/images/zwoelf/zwoelf-detail.JPG" />
+      <img src="~/static/images/zwoelf/zwoelf-week.svg" />
     </section>
     <snipcart />
   </div>
 </template>
 
-<style lang="scss">
+<script type="text/javascript">
+import Snipcart from '~/components/Snipcart.vue'
+export default {
+  components: {
+    Snipcart
+  }
+}
+</script>
+
+<style scoped lang="scss">
 section {
-  height: 100vh;
-  background: yellow;
+  min-height: 100vh;
+  background-image: url('~static/images/zwoelf/zwoelf-dots.svg');
+  background-size: 0.6rem;
   img {
+    background: white;
     object-fit: contain;
     max-height: 90vh;
     max-width: 95vw;
   }
+  p {
+    background: white;
+  }
 }
 p.landing {
   font-size: 3rem;
-  line-height: 3rem;
+  line-height: 3.25rem;
+  display: inline;
+  background: white;
+  padding: 0.25rem 0;
 }
 </style>

@@ -3,12 +3,13 @@
 Reset CSS and define standard colours etc. Actual styling is done in the vue components such as default.vue
 
  */
- 
+
 :root {
-  font-family: 'Chivo', sans-serif;
+  --main-font-family: 'Chivo', sans-serif;
+  --main-text-colour: black;
+  font-family: var(--main-font-family);
   font-size: 20px;
   line-height: 1.3em;
-  --main-text-colour: black;
   color: var(--main-text-colour);
 }
 
