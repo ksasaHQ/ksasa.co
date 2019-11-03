@@ -28,11 +28,11 @@
       >
         Kaufen
       </button>
-      <button class="snipcart-checkout">Click here to checkout</button>
     </section>
     <section>
       <img src="~/static/images/zwoelf/zwoelf-detail.JPG" />
     </section>
+    <snipcart />
   </div>
 </template>
 
