@@ -9,7 +9,7 @@
       </p>
     </section>
     <section>
-      <img src="~/static/images/zwoelf/zwoelf-front-hero.JPG" />
+      <img src="~/static/images/zwoelf/zwoelf-front-hero.jpg" />
     </section>
     <section>
       <p>
@@ -23,7 +23,7 @@
         data-item-price="19.99"
         data-item-url="/"
         data-item-description="Wandkalender für das Jahr 2020"
-        data-item-image="_nuxt/static/images/zwoelf/zwoelf-front-hero.JPG"
+        data-item-image="_nuxt/static/images/zwoelf/zwoelf-front-hero.jpg"
         data-item-name="Wandkalender 2020"
       >
         Kaufen
