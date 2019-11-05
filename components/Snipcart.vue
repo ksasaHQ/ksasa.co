@@ -25,9 +25,7 @@ body,
   background-image: none;
   background-color: var(--main-text-colour);
 }
-.snipcart-cart-header {
-  display: none;
-}
+.snipcart-cart-header,
 .snipcart-discount-box__button,
 .snipcart-modal__close {
   display: none;
@@ -52,5 +50,11 @@ body,
 }
 .snipcart-payment-methods__title {
   background-color: white;
+}
+.snipcart-checkout-transitions-enter-active {
+  animation: upwardsIn 0.5s ease-out both;
+}
+.snipcart-checkout-transitions-leave-active {
+  animation: upwardsOut 0.1s ease-in both;
 }
 </style>

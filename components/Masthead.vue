@@ -10,6 +10,7 @@
 header {
   text-align: center;
   position: fixed;
+  top: 0;
   width: 100vw;
   z-index: 100;
 }

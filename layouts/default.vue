@@ -17,7 +17,7 @@ export default {
   }
 }
 </script>
-<style scoped lang="scss">
+<style lang="scss">
 #layout_default > div {
   min-height: calc(100vh - var(--footer-height));
 
@@ -39,7 +39,7 @@ a {
   }
 }
 
-section {
+.centered {
   align-items: center;
   display: flex;
   flex-direction: column;
