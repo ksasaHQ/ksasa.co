@@ -9,7 +9,7 @@
       </p>
     </section>
     <section>
-      <img src="~/static/images/zwoelf/zwoelf-front-hero.jpg" />
+      <img src="~/assets/images/zwoelf/zwoelf-front-hero.jpg" />
     </section>
     <section>
       <p>
@@ -23,14 +23,14 @@
         data-item-price="19.99"
         data-item-url="/"
         data-item-description="Wandkalender für das Jahr 2020"
-        data-item-image="_nuxt/static/images/zwoelf/zwoelf-front-hero.jpg"
+        data-item-image="_nuxt/assets/images/zwoelf/zwoelf-front-hero.jpg"
         data-item-name="Wandkalender 2020"
       >
         Kaufen
       </button>
     </section>
     <section>
-      <img src="~/static/images/zwoelf/zwoelf-week.svg" />
+      <ZwoelfWeek />
     </section>
     <snipcart />
   </div>
@@ -38,9 +38,11 @@
 
 <script type="text/javascript">
 import Snipcart from '~/components/Snipcart.vue'
+import ZwoelfWeek from '~/assets/images/zwoelf/zwoelf-week.svg?inline'
 export default {
   components: {
-    Snipcart
+    Snipcart,
+    ZwoelfWeek
   }
 }
 </script>
@@ -48,7 +50,7 @@ export default {
 <style scoped lang="scss">
 section {
   min-height: 100vh;
-  background-image: url('~static/images/zwoelf/zwoelf-dots.svg');
+  background-image: url('~assets/images/zwoelf/zwoelf-dots.svg?data');
   background-size: 0.6rem;
   img {
     background: white;
