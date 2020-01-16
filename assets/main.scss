@@ -153,16 +153,6 @@ section {
   display: block;
 }
 
-
-
-.page-enter-active {
-  animation: upwardsIn 0.5s ease-out both;
-}
-
-.page-leave-active {
-  animation: upwardsOut 0.1s ease-in both;
-}
-
 @keyframes upwardsIn {
   0% {
     transform: translate3d(0, 1rem, 0);
@@ -186,6 +176,15 @@ section {
     opacity: 0;
   }
 }
+
+// @keyframes slideUp {
+//   0% {
+//     transform: translate3d(0, 100vh, 0);
+//   }
+//   100% {
+//     transform: translate3d(0, 0, 0);
+//   }
+// }
 
 *,
 *:before,

@@ -16,8 +16,9 @@ header {
 }
 
 header h1 {
-  margin-top: 1.4rem;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-top: 1.5rem;
 }
 </style>

@@ -26,7 +26,7 @@ export default {
   }
 
   & > *:first-child {
-    padding-top: 5rem; // make space for masthead
+    padding-top: 3.5rem; // make space for masthead
   }
 }
 
@@ -39,12 +39,49 @@ a {
   }
 }
 
+h2 {
+  font-weight: 600;
+}
+
+section {
+  min-height: 100vh;
+  img {
+    background: white;
+    object-fit: contain;
+    max-height: 90vh;
+    max-width: 95vw;
+  }
+  p {
+    // background: white;
+  }
+}
+
 .centered {
-  align-items: center;
+  * {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+  }
+}
+
+.flex-row {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
-  position: relative;
+  flex-direction: row;
+}
+.flex-1 {
+  flex-grow: 1;
+}
+.flex-2 {
+  flex-grow: 2;
+}
+.page-enter-active {
+  animation: upwardsIn 0.5s ease-out both;
+}
+
+.page-leave-active {
+  animation: upwardsOut 0.1s ease-in both;
 }
 </style>
