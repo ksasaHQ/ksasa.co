@@ -26,6 +26,10 @@ export default {
       }
     ]
   },
+  layoutTransition: {
+    name: 'slideUp',
+    mode: 'out-in'
+  },
   /*
    ** Customize the progress-bar color
    */
