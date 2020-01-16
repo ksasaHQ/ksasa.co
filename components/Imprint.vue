@@ -1,7 +1,7 @@
 <template>
   <footer>
     <nuxt-link exact to="/legal">
-      Legal
+      Impressum
     </nuxt-link>
   </footer>
 </template>
