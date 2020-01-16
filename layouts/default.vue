@@ -1,55 +1,87 @@
 <template>
-  <div>
+  <div id="layout_default">
+    <masthead />
     <nuxt />
+    <imprint />
+    <script src="https://cdn.snipcart.com/themes/v3.0.5/default/snipcart.js"></script>
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script type="text/javascript">
+import Imprint from '~/components/Imprint.vue'
+import Masthead from '~/components/Masthead.vue'
+export default {
+  components: {
+    Imprint,
+    Masthead
+  }
+}
+</script>
+<style lang="scss">
+#layout_default > div {
+  min-height: calc(100vh - var(--footer-height));
+
+  * {
+    z-index: 1;
+  }
+
+  & > *:first-child {
+    padding-top: 3.5rem; // make space for masthead
+  }
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+a {
+  color: var(--main-text-colour);
   text-decoration: none;
-  padding: 10px 30px;
+  &:hover {
+    border-bottom: solid var(--main-text-colour) 1px;
+    box-shadow: 0 -0.1em 0 var(--main-text-colour) inset;
+  }
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+h2 {
+  font-weight: 600;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+section {
+  min-height: 100vh;
+  img {
+    background: white;
+    object-fit: contain;
+    max-height: 90vh;
+    max-width: 95vw;
+  }
+  p {
+    // background: white;
+  }
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.centered {
+  * {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-1 {
+  flex-grow: 1;
+}
+.flex-2 {
+  flex-grow: 2;
+}
+.page-enter-active {
+  animation: upwardsIn 0.5s ease-out both;
+}
+
+.page-leave-active {
+  animation: upwardsOut 0.1s ease-in both;
 }
 </style>

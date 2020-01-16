@@ -14,7 +14,17 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.css'
+      }
+    ]
+  },
+  layoutTransition: {
+    name: 'slideUp',
+    mode: 'out-in'
   },
   /*
    ** Customize the progress-bar color
@@ -23,7 +33,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/main.scss'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -38,7 +48,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/svg'],
   /*
    ** Build configuration
    */
@@ -47,5 +57,9 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0' // default: localhost
   }
 }
