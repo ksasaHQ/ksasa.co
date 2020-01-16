@@ -18,10 +18,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Chivo:400,700'
-      },
-      {
-        rel: 'stylesheet',
         href: 'https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.css'
       }
     ]
