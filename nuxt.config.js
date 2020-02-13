@@ -48,7 +48,17 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['nuxt-responsive-loader'],
+  responsiveLoader: {
+    name: 'img/[hash:7]-[width].[ext]',
+    min: 640, // minimum image width generated
+    max: 1080, // maximum image width generated
+    steps: 5, // five sizes per image will be generated
+    placeholder: false, // no placeholder will be generated
+    quality: 65, // images are compressed with medium quality
+
+    format: 'png'
+  },
   /*
    ** Build configuration
    */

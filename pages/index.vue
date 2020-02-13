@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="full-height">
-      <img src="~/assets/images/hero.jpg" />
+      <img :srcset="require('~/assets/images/hero.jpg').srcSet" />
     </section>
     <section class="full-height">
       <a href="mailto:hello@ksasa.co">Say hi!</a>
