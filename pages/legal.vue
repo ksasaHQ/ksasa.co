@@ -169,9 +169,9 @@ export default {
 h2,
 h3,
 p {
-  margin: 2rem;
+  margin: 1rem 6vw;
 }
 li {
-  margin-left: 4rem;
+  margin-left: calc(6vw + 2rem);
 }
 </style>
