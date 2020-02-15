@@ -10,9 +10,9 @@ a {
   top: 1rem;
   z-index: 100;
 
-  :hover {
-    border-bottom: none !important;
-    box-shadow: none !important;
+  &:hover {
+    border-bottom: none;
+    box-shadow: none;
   }
 }
 </style>
