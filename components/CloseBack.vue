@@ -13,6 +13,7 @@ a {
   &:hover {
     border-bottom: none;
     box-shadow: none;
+    cursor: pointer;
   }
 }
 </style>
