@@ -37,7 +37,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/v-lazy-image.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -50,13 +50,10 @@ export default {
    */
   modules: ['nuxt-responsive-loader'],
   responsiveLoader: {
-    name: 'img/[hash:7]-[width].[ext]',
-    min: 640, // minimum image width generated
-    max: 1080, // maximum image width generated
-    steps: 5, // five sizes per image will be generated
+    name: 'images/[name]-[width].[ext]',
+    sizes: [320, 640, 768, 960, 1024, 1280, 1600, 1920],
     placeholder: false, // no placeholder will be generated
-    quality: 65, // images are compressed with medium quality
-
+    quality: 85, // images are compressed with medium quality
     format: 'png'
   },
   /*

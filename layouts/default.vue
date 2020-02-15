@@ -56,10 +56,18 @@ section.full-height {
     max-width: 80vw;
     margin: auto;
     object-fit: contain;
-    position: absolute;
     right: 0;
     top: 0;
     z-index: 0;
+  }
+  img.v-lazy-image {
+    opacity: 0;
+    transform: translate3d(0, 25%, 0);
+    transition: opacity 2s, transform 1s;
+  }
+  img.v-lazy-image-loaded {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
