@@ -33,7 +33,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/v-lazy-image.js'],
+  plugins: ['~/plugins/v-lazy-image.js', '~/plugins/vue-router-referrer.js'],
   /*
    ** Nuxt.js dev-modules
    */

@@ -1,6 +1,23 @@
 <template>
-  <a @click="$router.go(-1)">&times;</a>
+  <a @click="router()">&times;</a>
 </template>
+
+<script type="text/javascript">
+export default {
+  data() {
+    return {
+      router:
+        this.$router.referrer !== undefined
+          ? function() {
+              this.$router.go(-1)
+            }
+          : function() {
+              this.$router.push('/')
+            }
+    }
+  }
+}
+</script>
 <style scoped lang="scss">
 a {
   font-size: 4rem;
