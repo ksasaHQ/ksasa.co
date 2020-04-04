@@ -18,11 +18,6 @@ export default {
 }
 </script>
 <style lang="scss">
-#layout_default > div {
-  min-height: calc(100vh - var(--footer-height));
-
-  * {
-    z-index: 1;
 body {
   @media (pointer: fine) {
     // crude way to detect non-mobile browsers, but not mission-critical
@@ -32,10 +27,8 @@ body {
     overflow-y: auto;
     width: 100vw;
   }
+}
 
-  & > *:first-child {
-    padding-top: 3.5rem; // make space for masthead
-  }
 @mixin link-decoration {
   text-decoration: solid underline;
   text-decoration-thickness: 0.15rem;
@@ -63,6 +56,7 @@ section.full-height {
   align-items: center;
   display: flex;
   justify-content: center;
+  padding: 3rem 0;
 
   img {
     background: white;
