@@ -165,7 +165,7 @@ export default {
   layout: 'modal'
 }
 </script>
-<style media="screen">
+<style scoped>
 h2,
 h3,
 p {
@@ -173,5 +173,6 @@ p {
 }
 li {
   margin-left: calc(6vw + 2rem);
+  margin-right: 6vw;
 }
 </style>
