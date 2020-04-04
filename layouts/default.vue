@@ -28,14 +28,22 @@ export default {
   & > *:first-child {
     padding-top: 3.5rem; // make space for masthead
   }
+@mixin link-decoration {
+  text-decoration: solid underline;
+  text-decoration-thickness: 0.15rem;
+  text-underline-position: under;
+  text-decoration-skip: none;
 }
 
 a {
   color: var(--main-text-colour);
-  text-decoration: none;
-  &:hover {
-    border-bottom: solid var(--main-text-colour) 1px;
-    box-shadow: 0 -0.1em 0 var(--main-text-colour) inset;
+  @include link-decoration;
+
+  @media (hover: hover) {
+    text-decoration: none;
+    &:hover {
+      @include link-decoration;
+    }
   }
 }
 

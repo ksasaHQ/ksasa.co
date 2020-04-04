@@ -28,9 +28,8 @@ a {
   z-index: 100;
 
   &:hover {
-    border-bottom: none;
-    box-shadow: none;
     cursor: pointer;
+    text-decoration: none;
   }
 }
 </style>
