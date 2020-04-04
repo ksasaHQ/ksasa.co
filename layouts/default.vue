@@ -23,6 +23,14 @@ export default {
 
   * {
     z-index: 1;
+body {
+  @media (pointer: fine) {
+    // crude way to detect non-mobile browsers, but not mission-critical
+    // snap-type: proximity is janky on mobile, will evaluate later
+    scroll-snap-type: y proximity;
+    height: 100vh;
+    overflow-y: auto;
+    width: 100vw;
   }
 
   & > *:first-child {
