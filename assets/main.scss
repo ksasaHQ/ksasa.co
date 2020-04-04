@@ -25,6 +25,16 @@ Reset CSS and define standard colours etc. Actual styling is done in the vue com
 
 @font-face {
   font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  font-feature-settings: var(--main-text-features);
+  src: url('~assets/font/Inter-Italic.woff2?v=3.11') format('woff2'),
+    url('~assets/font/Inter-Italic.woff?v=3.11') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
