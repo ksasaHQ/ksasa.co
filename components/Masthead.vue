@@ -15,10 +15,11 @@ header {
   z-index: 100;
 }
 
-header h1 {
-  font-size: 1.5rem;
+h1.title {
+  display: inline-block;
+  font-size: 1.4rem;
   font-weight: 600;
-  letter-spacing: -0.025em;
+  letter-spacing: +0.025em;
   margin-top: 1.5rem;
 }
 </style>
