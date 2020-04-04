@@ -24,7 +24,7 @@ a {
   font-weight: 200;
   position: fixed;
   right: 1rem;
-  top: 1rem;
+  top: 0rem;
   z-index: 100;
 
   &:hover {
