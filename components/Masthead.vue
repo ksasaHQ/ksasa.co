@@ -9,6 +9,7 @@
 <style scoped>
 header {
   text-align: center;
+  pointer-events: none;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -21,5 +22,6 @@ h1.title {
   font-weight: 600;
   letter-spacing: +0.025em;
   margin-top: 1.5rem;
+  pointer-events: auto;
 }
 </style>
