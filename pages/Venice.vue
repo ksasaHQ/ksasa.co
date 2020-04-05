@@ -243,12 +243,12 @@ section.lead {
   }
 
   a.imglink {
-    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.05),
-      0 0 0.05rem 0 rgba(0, 0, 0, 0.5);
     flex-grow: 0;
     margin: 2.5rem;
 
     img {
+      box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.05),
+        0 0 0.05rem 0 rgba(0, 0, 0, 0.5);
       display: block;
       max-width: 10rem;
       min-width: 5rem;
