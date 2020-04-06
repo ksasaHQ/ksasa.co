@@ -145,6 +145,7 @@
           :srcset="
             require('~/assets/images/Venice/Download-Thumbnail.png').srcSet
           "
+          sizes="10rem"
           alt="Pdf Thumbnail"
         />
       </a>
