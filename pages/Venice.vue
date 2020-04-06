@@ -248,6 +248,28 @@ section.lead {
   a.imglink {
     flex-grow: 0;
     margin: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+
+    &::after {
+      content: '↓';
+      font-size: 2rem;
+      font-weight: 500;
+      position: absolute;
+      opacity: 0;
+      animation: 0.5s ease-in reverse upwardsIn;
+    }
+
+    &:hover {
+      transform: translateY(-0.025rem) scale(1.01);
+      //transition: transform 5s;
+      &::after {
+        opacity: 1;
+        animation: 0.2s ease-in reverse upwardsOut;
+      }
+    }
 
     img {
       box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.05),
