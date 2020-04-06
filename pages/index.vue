@@ -3,8 +3,8 @@
     <section class="full-height">
       <v-lazy-image
         :src="require('~/assets/images/hero.jpg').src"
+        sizes="100vw"
         :srcset="require('~/assets/images/hero.jpg').srcSet"
-        use-picture
       />
     </section>
     <section class="full-height">

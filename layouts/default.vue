@@ -14,6 +14,46 @@ export default {
   components: {
     Imprint,
     Masthead
+  },
+  data() {
+    return {
+      windowWidth: -1,
+      windowHeight: -1
+    }
+  },
+  mounted() {
+    this.$nextTick(function() {
+      window.addEventListener('resize', this.getWindowWidth)
+      window.addEventListener('resize', this.getWindowHeight)
+
+      // Init
+      this.getWindowWidth()
+      this.getWindowHeight()
+    })
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.getWindowWidth)
+    window.removeEventListener('resize', this.getWindowHeight)
+  },
+
+  methods: {
+    getWindowWidth(event) {
+      this.windowWidth = document.documentElement.clientWidth
+
+      /*
+      Work around Webkit Bug 149899 - Responsive images (srcset, sizes, w) don't load higher resolution when viewport is enlarged.
+      See: https://bugs.webkit.org/show_bug.cgi?id=149899
+      */
+
+      const sources = document.querySelectorAll('img[sizes],source[sizes]')
+      for (let i = 0; i < sources.length; i++) {
+        sources[i].sizes += ''
+      }
+    },
+
+    getWindowHeight(event) {
+      this.windowHeight = document.documentElement.clientHeight
+    }
   }
 }
 </script>
@@ -102,12 +142,8 @@ section.full-height {
 
   img {
     background: white;
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
     max-height: 75vh;
     max-width: 80vw;
-    margin: auto;
     z-index: 0;
 
     &.v-lazy-image {
