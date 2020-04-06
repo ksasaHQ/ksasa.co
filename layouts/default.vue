@@ -14,6 +14,36 @@ export default {
   components: {
     Imprint,
     Masthead
+  },
+  data() {
+    return {
+      windowWidth: -1,
+      windowHeight: -1
+    }
+  },
+  mounted() {
+    this.$nextTick(function() {
+      window.addEventListener('resize', this.getWindowWidth)
+      window.addEventListener('resize', this.getWindowHeight)
+
+      // Init
+      this.getWindowWidth()
+      this.getWindowHeight()
+    })
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.getWindowWidth)
+    window.removeEventListener('resize', this.getWindowHeight)
+  },
+
+  methods: {
+    getWindowWidth(event) {
+      this.windowWidth = document.documentElement.clientWidth
+    },
+
+    getWindowHeight(event) {
+      this.windowHeight = document.documentElement.clientHeight
+    }
   }
 }
 </script>
@@ -102,12 +132,8 @@ section.full-height {
 
   img {
     background: white;
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
     max-height: 75vh;
     max-width: 80vw;
-    margin: auto;
     z-index: 0;
 
     &.v-lazy-image {
