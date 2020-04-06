@@ -5,6 +5,7 @@
       <v-lazy-image
         :src="require('~/assets/images/Venice/Bambus.png').src"
         :srcset="require('~/assets/images/Venice/Bambus.png').srcSet"
+        sizes="100vw"
         alt="Das Portal des deutschen Pavillons in Venedig ist von Bambusstauden zugewuchert."
       />
     </section>
@@ -38,6 +39,7 @@
         <v-lazy-image
           :src="require('~/assets/images/Venice/Sand.png').src"
           :srcset="require('~/assets/images/Venice/Sand.png').srcSet"
+          sizes="100vw"
           alt="Der Innenraum des Pavillons ist mit Sand gefüllt. Zwei verschränkte Förderbänder transportieren ihn in einem ewigen Kreislauf."
         />
         <figcaption>Automatische Skulptur</figcaption>
