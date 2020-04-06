@@ -39,6 +39,16 @@ export default {
   methods: {
     getWindowWidth(event) {
       this.windowWidth = document.documentElement.clientWidth
+
+      /*
+      Work around Webkit Bug 149899 - Responsive images (srcset, sizes, w) don't load higher resolution when viewport is enlarged.
+      See: https://bugs.webkit.org/show_bug.cgi?id=149899
+      */
+
+      const sources = document.querySelectorAll('img[sizes],source[sizes]')
+      for (let i = 0; i < sources.length; i++) {
+        sources[i].sizes += ''
+      }
     },
 
     getWindowHeight(event) {
