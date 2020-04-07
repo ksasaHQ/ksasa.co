@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="index">
     <section class="full-height">
       <v-lazy-image
         :src="require('~/assets/images/hero.jpg').src"
@@ -13,10 +13,12 @@
   </div>
 </template>
 
-<style scoped lang="scss">
-section {
-  a {
-    font-size: 2rem;
+<style lang="scss">
+#index {
+  section {
+    a {
+      font-size: 2rem;
+    }
   }
 }
 </style>

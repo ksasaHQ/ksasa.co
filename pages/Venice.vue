@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article id="Venice">
     <h1 itemprop="headline">Urgent Matters: Castles Built on Sand</h1>
     <section class="full-height">
       <v-lazy-image
@@ -182,103 +182,105 @@
   </article>
 </template>
 
-<style scoped lang="scss">
-h1 {
-  display: none;
-}
-
-section.lead {
-  @media screen and (max-width: 50rem) {
-    scroll-snap-align: none;
-
-    p {
-      max-width: 40rem !important;
-      margin: 5vw !important;
-    }
-
-    *.lead-longer {
-      display: block;
-      align-self: center;
-      font-size: 1rem;
-      hyphens: auto;
-      line-height: 1.5em;
-      max-width: 40rem;
-      margin: 5vw auto;
-
-      &:first-of-type {
-        margin-top: 8vw;
-      }
-    }
+<style lang="scss">
+#Venice {
+  h1 {
+    display: none;
   }
-}
 
-#download {
-  align-content: center;
-  background: hsl(0, 0, 95);
-  flex-flow: row wrap;
-  line-height: 1.5rem;
-  padding: 3rem calc(4.5vw + 1em) 7rem;
-  font-size: 0.8rem;
-
-  div {
-    flex-shrink: 1;
-    flex-basis: 50%;
-    max-width: 38rem;
-
-    h2,
-    h3,
-    ol,
-    p {
-      margin: calc(0.5vw + 0.5em) calc(0.5vw + 1em);
-    }
-    div {
-      width: auto;
-
-      li {
-        list-style: none;
-        white-space: nowrap;
-      }
+  section.lead {
+    @media screen and (max-width: 50rem) {
+      scroll-snap-align: none;
 
       p {
-        flex-basis: 45%;
+        max-width: 40rem;
+        margin: 5vw;
+      }
+
+      *.lead-longer {
+        display: block;
+        align-self: center;
+        font-size: 1rem;
+        hyphens: auto;
+        line-height: 1.5em;
+        max-width: 40rem;
+        margin: 5vw auto;
+
+        &:first-of-type {
+          margin-top: 8vw;
+        }
       }
     }
   }
 
-  a.imglink {
-    flex-grow: 0;
-    margin: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.5s;
+  #download {
+    align-content: center;
+    background: hsl(0, 0, 95);
+    flex-flow: row wrap;
+    line-height: 1.5rem;
+    padding: 3rem calc(4.5vw + 1em) 7rem;
+    font-size: 0.8rem;
 
-    &::after {
-      content: '↓';
-      font-size: 2rem;
-      font-weight: 500;
-      position: absolute;
-      opacity: 0;
-      animation: 0.5s ease-in reverse upwardsIn;
-    }
+    div {
+      flex-shrink: 1;
+      flex-basis: 50%;
+      max-width: 38rem;
 
-    &:hover {
-      transform: translateY(-0.025rem) scale(1.01);
-      //transition: transform 5s;
-      &::after {
-        opacity: 1;
-        animation: 0.2s ease-in reverse upwardsOut;
+      h2,
+      h3,
+      ol,
+      p {
+        margin: calc(0.5vw + 0.5em) calc(0.5vw + 1em);
+      }
+      div {
+        width: auto;
+
+        li {
+          list-style: none;
+          white-space: nowrap;
+        }
+
+        p {
+          flex-basis: 45%;
+        }
       }
     }
 
-    img {
-      box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.05),
-        0 0 0.05rem 0 rgba(0, 0, 0, 0.5);
-      display: block;
-      max-width: 10rem;
-      min-width: 5rem;
-      opacity: 1;
-      transform: none;
+    a.imglink {
+      flex-grow: 0;
+      margin: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.5s;
+
+      &::after {
+        content: '↓';
+        font-size: 2rem;
+        font-weight: 500;
+        position: absolute;
+        opacity: 0;
+        animation: 0.5s ease-in reverse upwardsIn;
+      }
+
+      &:hover {
+        transform: translateY(-0.025rem) scale(1.01);
+        //transition: transform 5s;
+        &::after {
+          opacity: 1;
+          animation: 0.2s ease-in reverse upwardsOut;
+        }
+      }
+
+      img {
+        box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.05),
+          0 0 0.05rem 0 rgba(0, 0, 0, 0.5);
+        display: block;
+        max-width: 10rem;
+        min-width: 5rem;
+        opacity: 1;
+        transform: none;
+      }
     }
   }
 }

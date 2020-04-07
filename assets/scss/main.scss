@@ -4,6 +4,8 @@ Reset CSS and define standard colours etc. Actual styling is done in the vue com
 
  */
 
+@import url('~assets/scss/reset.scss');
+
 @font-face {
   font-family: 'Inter';
   font-style: normal;
@@ -77,102 +79,6 @@ Reset CSS and define standard colours etc. Actual styling is done in the vue com
   }
 }
 
-html,
-body,
-body div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-time,
-mark,
-audio,
-video,
-a {
-  background: transparent;
-  border: 0;
-  font-size: 100%;
-  font-weight: inherit;
-  font-style: normal;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  vertical-align: baseline;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-  display: block;
-}
-
 @keyframes upwardsIn {
   0% {
     transform: translate3d(0, 1rem, 0);
@@ -195,11 +101,4 @@ section {
     transform: translate3d(0, -1rem, 0);
     opacity: 0;
   }
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
 }
