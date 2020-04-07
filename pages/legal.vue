@@ -165,14 +165,16 @@ export default {
   layout: 'modal'
 }
 </script>
-<style scoped>
-h2,
-h3,
-p {
-  margin: 1rem 6vw;
-}
-li {
-  margin-left: calc(6vw + 2rem);
-  margin-right: 6vw;
+<style lang="scss">
+#legal {
+  h2,
+  h3,
+  p {
+    margin: 1rem 6vw;
+  }
+  li {
+    margin-left: calc(6vw + 2rem);
+    margin-right: 6vw;
+  }
 }
 </style>
