@@ -45,10 +45,9 @@ export default {
       See: https://bugs.webkit.org/show_bug.cgi?id=149899
       */
 
-      const sources = document.querySelectorAll('img[sizes],source[sizes]')
-      for (let i = 0; i < sources.length; i++) {
-        sources[i].sizes += ''
-      }
+      document
+        .querySelectorAll('img[sizes],source[sizes]')
+        .forEach((source) => (source.sizes *= ''))
     },
 
     getWindowHeight(event) {
