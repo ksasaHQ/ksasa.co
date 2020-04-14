@@ -66,6 +66,8 @@ body {
     height: 100vh;
     overflow-y: auto;
     width: 100vw;
+
+    @include font-scale0;
   }
 }
 
@@ -97,8 +99,9 @@ cite {
 }
 
 figcaption {
+  @include font-scale-1;
+
   font: {
-    size: 0.8rem;
     weight: 500;
   }
   letter-spacing: -0.006em;
@@ -124,9 +127,9 @@ p {
   hyphens: auto;
 
   &.lead {
+    @include font-scale2;
     font-size: calc(1.2rem + 0.25vw);
-    letter-spacing: -0.02em;
-    line-height: 1.4em;
+    line-height: $scale2 * 1em;
     max-width: 65rem !important;
   }
 }
@@ -165,9 +168,8 @@ section.full-height {
 
   &#footnotes {
     li {
-      font-size: 0.8rem;
-      letter-spacing: -0.011em;
-      line-height: 1.6rem;
+      @include font-scale-1;
+      line-height: $scale2 * 1rem;
       margin: auto calc(5vw + 2em);
       max-width: 80vw;
     }
@@ -175,8 +177,8 @@ section.full-height {
 }
 
 sup {
+  @include font-scale-2;
   font: {
-    size: 0.6em;
     weight: 600;
   }
   vertical-align: super;

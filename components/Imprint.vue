@@ -1,18 +1,18 @@
 <template>
-  <footer>
+  <footer id="imprint">
     <nuxt-link exact to="/legal">
       Impressum
     </nuxt-link>
   </footer>
 </template>
 
-<style scoped>
-footer {
-  font-size: 0.7rem;
-  --footer-height: 5rem;
-  height: var(--footer-height);
+<style lang="scss">
+#imprint {
+  @include font-scale-1;
+  $footer-height: $scale5 + $scale1 * 1rem;
+  height: $footer-height;
   text-align: center;
-  margin-top: calc(-1 * var(--footer-height));
+  margin-top: -1 * $footer-height;
   width: 100vw;
   z-index: 100;
 }

@@ -1,5 +1,5 @@
 <template>
-  <a @click="router()">&times;</a>
+  <a class="CloseBack" @click="router()">&times;</a>
 </template>
 
 <script type="text/javascript">
@@ -18,9 +18,10 @@ export default {
   }
 }
 </script>
-<style scoped lang="scss">
-a {
-  font-size: 4rem;
+<style lang="scss">
+a.CloseBack {
+  @include font-scale6;
+  //font-size: 4rem;
   font-weight: 200;
   position: fixed;
   right: 1rem;

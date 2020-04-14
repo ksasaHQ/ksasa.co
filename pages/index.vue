@@ -17,7 +17,7 @@
 #index {
   section {
     a {
-      font-size: 2rem;
+      @include font-scale4;
     }
   }
 }
