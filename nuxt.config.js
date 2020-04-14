@@ -30,6 +30,13 @@ export default {
    ** Global CSS
    */
   css: ['~/assets/scss/main.scss'],
+
+  /*
+   ** Sass variables and mixins for .vue components
+   */
+  styleResources: {
+    scss: ['./assets/scss/style-resources/*.scss']
+  },
   /*
    ** Plugins to load before mounting the App
    */
@@ -39,7 +46,8 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/style-resources'
   ],
   /*
    ** Nuxt.js modules
