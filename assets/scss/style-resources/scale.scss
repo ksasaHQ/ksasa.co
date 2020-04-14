@@ -1,0 +1,18 @@
+@import '../../../node_modules/mathsass/dist/math'; // libSass comes without math module
+
+$phi: (1 + sqrt(5)) / 2;
+
+$ratio: pow($phi, 0.5);
+
+$scale-5: pow($ratio, -5);
+$scale-4: pow($ratio, -4);
+$scale-3: pow($ratio, -3);
+$scale-2: pow($ratio, -2);
+$scale-1: pow($ratio, -1);
+$scale0: pow($ratio, 0);
+$scale1: pow($ratio, 1);
+$scale2: pow($ratio, 2);
+$scale3: pow($ratio, 3);
+$scale4: pow($ratio, 4);
+$scale5: pow($ratio, 5);
+$scale6: pow($ratio, 6);
