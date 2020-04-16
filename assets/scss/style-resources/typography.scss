@@ -52,17 +52,13 @@
 }
 
 // Variables and mixins
-
-$main-font-family: 'Inter', sans-serif;
-$main-text-colour: 'ladida';
-$main-text-features: 'asd';
 $rem: 18px;
 
 // Dynamic metrics for Inter UI
 // see https://rsms.me/inter/dynmetrics/
 $a: -0.0223;
 $b: 0.185;
-$c: -0.15; // Standard is -0.1745 see
+$c: -0.15; // Standard is -0.1745
 @function letter-spacing($font-size) {
   @return $a + $b * pow($E, ($c * $font-size * strip-unit($rem))) * 1em; // '' -> em
 }
@@ -81,8 +77,6 @@ $c: -0.15; // Standard is -0.1745 see
   $font-size: $scale0;
   font-size: $font-size * 1rem;
   letter-spacing: letter-spacing($font-size);
-  //line-height: $scale1 * 1em;
-  //line-height: 1.5em;
 }
 @mixin font-scale1 {
   $font-size: $scale1;

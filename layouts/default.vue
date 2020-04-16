@@ -104,7 +104,6 @@ figcaption {
   font: {
     weight: 500;
   }
-  letter-spacing: -0.006em;
   margin-left: 0.05em;
   margin-top: 0.25em;
   max-width: 90vw;
