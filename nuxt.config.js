@@ -15,7 +15,13 @@ export default {
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'icon',
+        type: 'image/svg+xml',
+        sizes: 'any',
+        href:
+          "data:image/svg+xml;utf8,%3Csvg viewBox='0 0 1 1' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-miterlimit='1.5'%3E%3Cpath d='M.323.588L.5.412l.177.176' fill='none' stroke='%23000' stroke-width='.0662621'/%3E%3C/svg%3E%0A"
+      },
       {
         rel: 'stylesheet',
         href: 'https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.css'
