@@ -167,13 +167,14 @@ export default {
 </script>
 <style lang="scss">
 #legal {
+  @include font-scale0;
   h2,
   h3,
   p {
     margin: 1rem 6vw;
   }
   li {
-    margin-left: calc(6vw + 2rem);
+    margin-left: calc(6vw + 1rem * #{$scale3});
     margin-right: 6vw;
   }
 }

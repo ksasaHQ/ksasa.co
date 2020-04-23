@@ -20,6 +20,7 @@
     }
   },
   "dependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
     "fibers": "^4.0.2",
     "nuxt": "^2.11.0",
     "nuxt-responsive-loader": "^2.0.1",
@@ -32,13 +33,14 @@
     "@nuxtjs/eslint-module": "^1.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.8.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.16.4",
     "husky": "^4.2.1",
     "lint-staged": "^10.0.7",
+    "mathsass": "^0.11.0",
     "node-sass": "^4.12.0",
+    "prettier": "^1.16.4",
     "sass-loader": "^8.0.0"
   }
 }

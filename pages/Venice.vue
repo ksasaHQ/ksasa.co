@@ -217,9 +217,12 @@
     align-content: center;
     background: hsl(0, 0, 95);
     flex-flow: row wrap;
-    line-height: 1.5rem;
+    //line-height: $scale2 * 1rem;
+
     padding: 3rem calc(4.5vw + 1em) 7rem;
-    font-size: 0.8rem;
+
+    @include font-scale-1;
+    //font-size: 0.8rem;
 
     div {
       flex-shrink: 1;
