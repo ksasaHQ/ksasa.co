@@ -1,22 +1,24 @@
 <template>
-  <div>
+  <div id="index">
     <section class="full-height">
       <v-lazy-image
         :src="require('~/assets/images/hero.jpg').src"
+        sizes="100vw"
         :srcset="require('~/assets/images/hero.jpg').srcSet"
-        use-picture
       />
     </section>
     <section class="full-height">
-      <a href="mailto:hello@ksasa.co">Say hi!</a>
+      <nuxt-link exact to="/Prusa-Enclosure-Raspberry-Pi">Prusa × Pi</nuxt-link>
     </section>
   </div>
 </template>
 
-<style scoped lang="scss">
-section {
-  a {
-    font-size: 2rem;
+<style lang="scss">
+#index {
+  section {
+    a {
+      @include font-scale4;
+    }
   }
 }
 </style>

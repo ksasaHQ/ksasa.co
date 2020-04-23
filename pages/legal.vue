@@ -165,13 +165,17 @@ export default {
   layout: 'modal'
 }
 </script>
-<style media="screen">
-h2,
-h3,
-p {
-  margin: 2rem;
-}
-li {
-  margin-left: 4rem;
+<style lang="scss">
+#legal {
+  @include font-scale0;
+  h2,
+  h3,
+  p {
+    margin: 1rem 6vw;
+  }
+  li {
+    margin-left: calc(6vw + 1rem * #{$scale3});
+    margin-right: 6vw;
+  }
 }
 </style>

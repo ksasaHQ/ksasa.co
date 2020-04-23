@@ -1,0 +1,31 @@
+/*
+
+Reset CSS and define standard colours etc. Actual styling is done in the vue components such as default.vue
+
+ */
+
+@import 'reset';
+
+@keyframes upwardsIn {
+  0% {
+    transform: translate3d(0, 1rem, 0);
+    opacity: 0;
+  }
+  75% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes upwardsOut {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, -1rem, 0);
+    opacity: 0;
+  }
+}

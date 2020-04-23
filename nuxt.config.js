@@ -22,10 +22,6 @@ export default {
       }
     ]
   },
-  layoutTransition: {
-    name: 'slideUp',
-    mode: 'out-in'
-  },
   /*
    ** Customize the progress-bar color
    */
@@ -33,17 +29,25 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/main.scss'],
+  css: ['~/assets/scss/main.scss'],
+
+  /*
+   ** Sass variables and mixins for .vue components
+   */
+  styleResources: {
+    scss: ['./assets/scss/style-resources/*.scss']
+  },
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/v-lazy-image.js'],
+  plugins: ['~/plugins/v-lazy-image.js', '~/plugins/vue-router-referrer.js'],
   /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/style-resources'
   ],
   /*
    ** Nuxt.js modules
@@ -51,7 +55,7 @@ export default {
   modules: ['nuxt-responsive-loader'],
   responsiveLoader: {
     name: 'images/[name]-[width].[ext]',
-    sizes: [320, 640, 768, 960, 1024, 1280, 1600, 1920],
+    sizes: [640, 768, 960, 1024, 1280, 1600, 1920],
     placeholder: false, // no placeholder will be generated
     quality: 85, // images are compressed with medium quality
     format: 'png'

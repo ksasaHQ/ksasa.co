@@ -1,5 +1,5 @@
 <template>
-  <div id="index">
+  <div id="Zwoelf">
     <section class="landing chequered">
       <img
         class="image-frame"
@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#index {
+#Zwoelf {
   // background-image: url('~assets/images/zwoelf/zwoelf-dots.svg?data');
   background-origin: border-box;
   background-size: 0.5rem;
@@ -98,46 +98,46 @@ export default {
   * {
     z-index: 1;
   }
-}
-.grey {
-  background: rgb(245, 245, 245);
-}
-.pop-left {
-  object-fit: cover;
-  object-position: left;
-  right: 0;
-  width: 50vw;
-  height: 100vh;
-}
-.image-frame {
-  max-width: 100vw;
-  object-fit: cover;
-  min-height: 15rem;
-  background: white;
-  padding: 0.5rem 0;
-}
-span.landing {
-  font-size: 2rem;
-  line-height: 2.5rem;
-  background: white;
-  padding: 0.25rem 0.5rem 0.5rem 0.75rem;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-  // box-shadow: 0 -2rem 0 yellow inset;
-
-  &::first-line {
-    background: blue !important;
+  .grey {
+    background: rgb(245, 245, 245);
   }
-}
-.calendar {
-  height: 100vh;
-  object-fit: cover;
-}
-svg {
-  fill: red;
-  #dots {
-    stroke-width: 2;
-    stroke-dasharray: 5;
+  .pop-left {
+    object-fit: cover;
+    object-position: left;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+  }
+  .image-frame {
+    max-width: 100vw;
+    object-fit: cover;
+    min-height: 15rem;
+    background: white;
+    padding: 0.5rem 0;
+  }
+  span.landing {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    background: white;
+    padding: 0.25rem 0.5rem 0.5rem 0.75rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    // box-shadow: 0 -2rem 0 yellow inset;
+
+    &::first-line {
+      background: blue !important;
+    }
+  }
+  .calendar {
+    height: 100vh;
+    object-fit: cover;
+  }
+  svg {
+    fill: red;
+    #dots {
+      stroke-width: 2;
+      stroke-dasharray: 5;
+    }
   }
 }
 </style>
