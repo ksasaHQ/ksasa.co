@@ -3,6 +3,6 @@
 @import 'util';
 
 @mixin text-body-dimensions {
-  margin: $scale-1 * 1em 5vw;
+  margin: $scale-1 5vw;
   max-width: 40rem;
 }

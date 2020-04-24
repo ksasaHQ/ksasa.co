@@ -9,7 +9,7 @@
 <style lang="scss">
 #imprint {
   @include font-scale-1;
-  $footer-height: $scale5 + $scale1 * 1rem;
+  $footer-height: $scale5 + $scale1;
   height: $footer-height;
   text-align: center;
   margin-top: -1 * $footer-height;

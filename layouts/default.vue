@@ -127,7 +127,7 @@ p {
   &.lead {
     @include font-scale2;
     font-size: calc(1.2rem + 0.25vw);
-    line-height: $scale2 * 1em;
+    line-height: strip-unit($scale2);
     max-width: 65rem !important;
   }
 }
@@ -167,7 +167,7 @@ section.full-height {
   &#footnotes {
     li {
       @include font-scale-1;
-      line-height: $scale2 * 1rem;
+      line-height: $scale1;
       margin: auto calc(5vw + 2em);
       max-width: 80vw;
     }
@@ -179,6 +179,7 @@ sup {
   font: {
     weight: 600;
   }
+  line-height: $scale-2;
   vertical-align: super;
 }
 

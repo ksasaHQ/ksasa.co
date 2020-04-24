@@ -20,7 +20,7 @@
     display: inline-block;
     font-weight: 600;
     letter-spacing: +0.025em;
-    margin-top: $scale1 * 1rem;
+    margin-top: $scale1;
     pointer-events: auto;
   }
 }

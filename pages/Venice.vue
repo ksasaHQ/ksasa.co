@@ -217,7 +217,7 @@
     align-content: center;
     background: hsl(0, 0, 95);
     flex-flow: row wrap;
-    //line-height: $scale2 * 1rem;
+    //line-height: $scale2;
 
     padding: 3rem calc(4.5vw + 1em) 7rem;
 

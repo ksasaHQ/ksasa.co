@@ -11,56 +11,54 @@ $a: -0.0223;
 $b: 0.185;
 $c: -0.15; // Standard is -0.1745
 @function letter-spacing($font-size) {
-  @return $a + $b * pow($E, ($c * $font-size * strip-unit($rem))) * 1em; // '' -> em
+  @return $a + $b * pow($E, ($c * strip-unit($font-size) * strip-unit($rem))) *
+    1em; // '' -> em
 }
 
 @mixin font-scale-2 {
   $font-size: $scale-2;
-  font-size: $font-size * 1rem;
+  font-size: $font-size;
   letter-spacing: letter-spacing($font-size);
 }
 @mixin font-scale-1 {
   $font-size: $scale-1;
-  font-size: $font-size * 1rem;
+  font-size: $font-size;
   letter-spacing: letter-spacing($font-size);
 }
 @mixin font-scale0 {
   $font-size: $scale0;
-  font-size: $font-size * 1rem;
+  font-size: $font-size;
   letter-spacing: letter-spacing($font-size);
 }
 @mixin font-scale1 {
   $font-size: $scale1;
-  font-size: $font-size * 1rem;
+  font-size: $font-size;
   letter-spacing: letter-spacing($font-size);
 }
 @mixin font-scale2 {
   $font-size: $scale2;
-  font-size: $font-size * 1rem;
+  font-size: $font-size;
   letter-spacing: letter-spacing($font-size);
-  line-height: $scale1;
 }
 @mixin font-scale3 {
   $font-size: $scale3;
-  font-size: $font-size * 1rem;
+  font-size: $font-size;
   letter-spacing: letter-spacing($font-size);
-  line-height: $scale1;
 }
 @mixin font-scale4 {
   $font-size: $scale4;
-  font-size: $font-size * 1rem;
+  font-size: $font-size;
   letter-spacing: letter-spacing($font-size);
-  line-height: $scale1;
 }
 @mixin font-scale5 {
   $font-size: $scale5;
-  font-size: $font-size * 1rem;
+  font-size: $font-size;
   letter-spacing: letter-spacing($font-size);
-  line-height: $scale1;
+  line-height: $scale6;
 }
 @mixin font-scale6 {
   $font-size: $scale6;
-  font-size: $font-size * 1rem;
+  font-size: $font-size;
   letter-spacing: letter-spacing($font-size);
-  line-height: $scale1;
+  line-height: strip-unit($scale1);
 }
