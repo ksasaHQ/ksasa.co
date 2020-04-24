@@ -89,8 +89,32 @@
   </article>
 </template>
 
-<script>
-export default {}
+<script type="text/javascript">
+export default {
+  data() {
+    return {
+      background: 'hsl(0, 0%, 98%)',
+      prevBackground: null
+    }
+  },
+
+  /*
+  For now, each page sets and resets its background colour, as more pages use this, the functionality should probably move somerwhere else.
+  */
+
+  mounted() {
+    this.prevBackground = document.querySelector('body').style.backgroundColor
+    this.setBackground(this.background)
+  },
+  beforeDestroy() {
+    this.setBackground(this.prevBackground)
+  },
+  methods: {
+    setBackground(newBackground) {
+      document.querySelector('body').style.backgroundColor = newBackground
+    }
+  }
+}
 </script>
 
 <style lang="scss">
