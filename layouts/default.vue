@@ -47,7 +47,7 @@ export default {
 
       document
         .querySelectorAll('img[sizes],source[sizes]')
-        .forEach((source) => (source.sizes *= ''))
+        .forEach((source) => (source.sizes += ''))
     },
 
     getWindowHeight(event) {
