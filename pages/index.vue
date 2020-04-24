@@ -8,7 +8,7 @@
       />
     </section>
     <section class="full-height">
-      <a href="mailto:hello@ksasa.co">Say hi!</a>
+      <nuxt-link exact to="/Prusa-Enclosure-Raspberry-Pi">Prusa × Pi</nuxt-link>
     </section>
   </div>
 </template>
