@@ -33,9 +33,9 @@
             do, please let us know!)
           </li>
           <li>
-            Space within the enclosure is a quite cramped, so connecting the
-            wires to the Pi can be a bit, well, fiddly. We suggest you brew
-            yourself a cup of tea before doing this. (Or
+            Space within the enclosure is quite cramped, so connecting the wires
+            to the Pi can be a bit, well, fiddly. We suggest you brew yourself a
+            cup of tea before doing this. (Or
             <a
               href="https://github.com/ksasaHQ/Prusa-Enclosure-Raspberry-Pi/compare"
               >issue a pull request</a
