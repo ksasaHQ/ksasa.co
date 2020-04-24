@@ -20,7 +20,7 @@ export default {
         type: 'image/svg+xml',
         sizes: 'any',
         href:
-          "data:image/svg+xml;utf8,%3Csvg viewBox='0 0 1 1' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-miterlimit='1.5'%3E%3Cpath d='M.323.588L.5.412l.177.176' fill='none' stroke='%23000' stroke-width='.0662621'/%3E%3C/svg%3E%0A"
+          "data:image/svg+xml;utf8,%3Csvg viewBox='0 0 1 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E path %7B fill: none; stroke: %23000; stroke-width: .0662621; %7D @media (prefers-color-scheme: dark) %7B path %7B stroke: %23fff; %7D %3C/style%3E%3Cpath d='M.323.588L.5.412l.177.176' /%3E%3C/svg%3E"
       },
       {
         rel: 'stylesheet',
