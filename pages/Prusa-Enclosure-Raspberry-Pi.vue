@@ -1,6 +1,6 @@
 <template lang="html">
   <article id="Prusa-Enclosure-Raspberry-Pi">
-    <section class="full-height">
+    <section class="full-height snap">
       <v-lazy-image
         :src="
           require('~/assets/images/Prusa-Enclosure-Raspberry-Pi/Illustration-Perspective.svg')
@@ -9,7 +9,7 @@
         alt="Stylised rendering of the 3D printer's electronics assembly incorporating a Raspberry Pi mini computer."
       />
     </section>
-    <section class="full-height snap">
+    <section class="full-height">
       <div>
         <h1>
           Prusa I3 MK3S Einsy +
