@@ -23,6 +23,13 @@ export default {
           "data:image/svg+xml;utf8,%3Csvg viewBox='0 0 1 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E path %7B fill: none; stroke: %23000; stroke-width: .0662621; %7D @media (prefers-color-scheme: dark) %7B path %7B stroke: %23fff; %7D %3C/style%3E%3Cpath d='M.323.588L.5.412l.177.176' /%3E%3C/svg%3E"
       },
       {
+        rel: 'mask-icon',
+        href: '/favicon.svg',
+        color: 'black'
+      },
+      { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+      { rel: 'manifest', href: '/manifest.json' },
+      {
         rel: 'stylesheet',
         href: 'https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.css'
       }
