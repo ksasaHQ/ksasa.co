@@ -29,11 +29,7 @@ export default {
         color: 'black'
       },
       { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
-      { rel: 'manifest', href: '/manifest.json' },
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.css'
-      }
+      { rel: 'manifest', href: '/manifest.json' }
     ]
   },
   /*

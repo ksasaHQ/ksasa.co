@@ -3,7 +3,6 @@
     <masthead />
     <nuxt />
     <imprint />
-    <script src="https://cdn.snipcart.com/themes/v3.0.7/default/snipcart.js"></script>
   </div>
 </template>
 
