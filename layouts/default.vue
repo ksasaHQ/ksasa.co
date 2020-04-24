@@ -182,6 +182,10 @@ sup {
   vertical-align: super;
 }
 
+ul {
+  list-style-type: '—     ';
+}
+
 .flex-row-wrap {
   display: flex;
   flex-flow: row wrap;
