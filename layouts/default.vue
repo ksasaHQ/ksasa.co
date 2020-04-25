@@ -70,13 +70,6 @@ body {
   }
 }
 
-@mixin link-decoration {
-  text-decoration: solid underline;
-  text-decoration-thickness: 0.15rem;
-  text-underline-position: under;
-  text-decoration-skip: none;
-}
-
 a {
   color: var(--main-text-colour);
   @include link-decoration;

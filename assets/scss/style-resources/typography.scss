@@ -62,3 +62,10 @@ $c: -0.15; // Standard is -0.1745
   letter-spacing: letter-spacing($font-size);
   line-height: strip-unit($scale1);
 }
+
+@mixin link-decoration {
+  text-decoration: solid underline;
+  text-decoration-thickness: 0.15rem;
+  text-underline-position: under;
+  text-decoration-skip: none;
+}
