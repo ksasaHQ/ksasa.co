@@ -276,8 +276,7 @@
       }
 
       img {
-        box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.05),
-          0 0 0.05rem 0 rgba(0, 0, 0, 0.5);
+        box-shadow: $shadow-soft, $shadow-soft-outline;
         display: block;
         max-width: 10rem;
         min-width: 5rem;

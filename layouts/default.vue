@@ -148,7 +148,7 @@ section.full-height {
     &.v-lazy-image-loaded {
       opacity: 1;
       transform: translate3d(0, 0, 0);
-      box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.15);
+      box-shadow: $shadow-soft-large;
     }
   }
 
