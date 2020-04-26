@@ -4,6 +4,13 @@ $phi: (1 + sqrt(5)) / 2;
 
 $ratio: pow($phi, 0.5);
 
+$scale-12: pow($ratio, -12) * 1rem;
+$scale-11: pow($ratio, -11) * 1rem;
+$scale-10: pow($ratio, -10) * 1rem;
+$scale-9: pow($ratio, -9) * 1rem;
+$scale-8: pow($ratio, -8) * 1rem;
+$scale-7: pow($ratio, -7) * 1rem;
+$scale-6: pow($ratio, -6) * 1rem;
 $scale-5: pow($ratio, -5) * 1rem;
 $scale-4: pow($ratio, -4) * 1rem;
 $scale-3: pow($ratio, -3) * 1rem;
@@ -16,3 +23,9 @@ $scale3: pow($ratio, 3) * 1rem;
 $scale4: pow($ratio, 4) * 1rem;
 $scale5: pow($ratio, 5) * 1rem;
 $scale6: pow($ratio, 6) * 1rem;
+$scale7: pow($ratio, 7) * 1rem;
+$scale8: pow($ratio, 8) * 1rem;
+$scale9: pow($ratio, 9) * 1rem;
+$scale10: pow($ratio, 10) * 1rem;
+$scale11: pow($ratio, 11) * 1rem;
+$scale12: pow($ratio, 12) * 1rem;
