@@ -1,5 +1,5 @@
 <template>
-  <footer id="imprint">
+  <footer class="imprint">
     <nuxt-link exact to="/legal">
       Impressum
     </nuxt-link>
@@ -7,7 +7,7 @@
 </template>
 
 <style lang="scss">
-#imprint {
+.imprint {
   @include font-scale-1;
   $footer-height: $scale5 + $scale1;
   height: $footer-height;

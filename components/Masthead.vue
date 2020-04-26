@@ -1,5 +1,5 @@
 <template>
-  <header id="header">
+  <header class="header">
     <nuxt-link exact to="/">
       <h1 class="title">ksasa</h1>
     </nuxt-link>
@@ -7,7 +7,7 @@
 </template>
 
 <style lang="scss">
-#header {
+.header {
   text-align: center;
   pointer-events: none;
   position: fixed;
