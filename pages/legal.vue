@@ -1,5 +1,5 @@
 <template
-  ><div id="legal">
+  ><div class="legal">
     <section>
       <h2>Impressum</h2>
       <p>
@@ -166,7 +166,7 @@ export default {
 }
 </script>
 <style lang="scss">
-#legal {
+.legal {
   @include font-scale0;
   h2,
   h3,

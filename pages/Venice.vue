@@ -1,5 +1,5 @@
 <template>
-  <article id="Venice">
+  <article class="Venice">
     <h1 itemprop="headline">Urgent Matters: Castles Built on Sand</h1>
     <section class="full-height">
       <v-lazy-image
@@ -183,7 +183,7 @@
 </template>
 
 <style lang="scss">
-#Venice {
+.Venice {
   h1 {
     display: none;
   }
