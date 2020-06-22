@@ -1,5 +1,5 @@
 <template
-  ><div class="legal">
+  ><div id="legal">
     <section>
       <h2>Impressum</h2>
       <p>
@@ -166,7 +166,7 @@ export default {
 }
 </script>
 <style lang="scss">
-.legal {
+#legal {
   @include font-scale0;
   h2,
   h3,
@@ -174,7 +174,7 @@ export default {
     margin: 1rem 6vw;
   }
   li {
-    margin-left: calc(6vw + #{$scale3});
+    margin-left: calc(6vw + 1rem * #{$scale3});
     margin-right: 6vw;
   }
 }

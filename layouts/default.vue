@@ -1,5 +1,5 @@
 <template>
-  <div class="default">
+  <div id="layout_default">
     <masthead />
     <nuxt />
     <imprint />
@@ -69,165 +69,156 @@ body {
   }
 }
 
-.default {
-  a {
-    color: var(--main-text-colour);
-    @include link-decoration;
+@mixin link-decoration {
+  text-decoration: solid underline;
+  text-decoration-thickness: 0.15rem;
+  text-underline-position: under;
+  text-decoration-skip: none;
+}
 
-    @media (hover: hover) {
-      text-decoration: none;
-      &:hover {
-        @include link-decoration;
-      }
-    }
+a {
+  color: var(--main-text-colour);
+  @include link-decoration;
 
-    &.footnotes-link-back {
-      text-decoration: none;
-    }
-  }
-
-  cite {
-    font-style: italic;
-  }
-
-  figcaption {
-    @include font-scale-1;
-
-    font: {
-      weight: 500;
-    }
-    margin-left: $scale-12;
-    margin-top: $scale-6;
-    max-width: 90vw;
-
-    img.v-lazy-image + & {
-      opacity: 0;
-      transition: opacity 1.1s;
-      transition-delay: 0.5s;
-    }
-    img.v-lazy-image-loaded + & {
-      opacity: 1;
+  @media (hover: hover) {
+    text-decoration: none;
+    &:hover {
+      @include link-decoration;
     }
   }
 
-  & h1 {
+  &.footnotes-link-back {
+    text-decoration: none;
+  }
+}
+
+cite {
+  font-style: italic;
+}
+
+figcaption {
+  @include font-scale-1;
+
+  font: {
+    weight: 500;
+  }
+  margin-left: 0.05em;
+  margin-top: 0.25em;
+  max-width: 90vw;
+
+  img.v-lazy-image + & {
+    opacity: 0;
+    transition: opacity 1.1s;
+    transition-delay: 0.5s;
+  }
+  img.v-lazy-image-loaded + & {
+    opacity: 1;
+  }
+}
+
+h2 {
+  font-weight: 600;
+}
+
+p {
+  hyphens: auto;
+
+  &.lead {
     @include font-scale2;
+    font-size: calc(1.2rem + 0.25vw);
+    line-height: $scale2 * 1em;
+    max-width: 65rem !important;
   }
+}
 
-  & h2 {
-    @include font-scale1;
-    font-weight: 600;
+section.full-height {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  hyphens: manual;
+  justify-content: center;
+  padding: 3rem 0;
+
+  img {
+    background: white;
+    max-height: 75vh;
+    max-width: 80vw;
+    z-index: 0;
+
+    &.v-lazy-image {
+      opacity: 0;
+      transform: translate3d(0, 10vh, 0);
+      transition: opacity 2s, transform 1s;
+    }
+    &.v-lazy-image-loaded {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.15);
+    }
   }
 
   p {
-    hyphens: auto;
-
-    &.lead {
-      @include font-scale2;
-      font-size: calc(1.2rem + 0.25vw);
-      line-height: strip-unit($scale2);
-      max-width: 65rem !important;
-    }
+    margin: 5vw;
+    max-width: 40rem;
   }
 
-  section.full-height {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex-flow: column nowrap;
-    hyphens: manual;
-    justify-content: center;
-    padding: 3rem 0;
-
-    img {
-      background: white;
-      max-height: 75vh;
+  &#footnotes {
+    li {
+      @include font-scale-1;
+      line-height: $scale2 * 1rem;
+      margin: auto calc(5vw + 2em);
       max-width: 80vw;
-      z-index: 0;
-
-      &.v-lazy-image {
-        opacity: 0;
-        transform: translate3d(0, 10vh, 0);
-        transition: opacity 2s, transform 1s;
-      }
-      &.v-lazy-image-loaded {
-        opacity: 1;
-        transform: none;
-        box-shadow: $shadow-soft-large;
-      }
-    }
-
-    p {
-      @include text-body-dimensions;
-    }
-
-    &#footnotes {
-      li {
-        @include font-scale-1;
-        line-height: $scale2;
-        margin: auto calc(5vw + 2em);
-        max-width: 80vw;
-      }
-      sup {
-        @include font-scale-2;
-        font-weight: 500;
-      }
     }
   }
+}
 
-  sup {
-    @include font-scale-2;
-    font: {
-      weight: 600;
-    }
-    line-height: $scale-2;
-    vertical-align: super;
+sup {
+  @include font-scale-2;
+  font: {
+    weight: 600;
   }
+  vertical-align: super;
+}
 
-  ul {
-    list-style-type: '—     ';
-  }
+ul {
+  list-style-type: '—     ';
+}
 
-  video {
-    max-height: 75vh;
-    max-width: 80vw;
+.flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  * {
+    flex: auto;
   }
+}
 
-  .flex-row-wrap {
-    display: flex;
-    flex-flow: row wrap;
-    * {
-      flex: auto;
-    }
-  }
+.full-height {
+  min-height: 100vh;
+}
 
-  .full-height {
-    min-height: 100vh;
-  }
+.hyphens-auto {
+  hyphens: auto;
+}
 
-  .hyphens-auto {
-    hyphens: auto;
-  }
+.hyphens-manual {
+  hyphens: manual;
+}
 
-  .hyphens-manual {
-    hyphens: manual;
-  }
+.nowrap {
+  white-space: nowrap;
+  hyphens: none;
+}
 
-  .nowrap {
-    white-space: nowrap;
-    hyphens: none;
-  }
+.page-enter-active {
+  animation: upwardsIn 0.5s ease-out both;
+}
 
-  .page-enter-active {
-    animation: upwardsIn 0.5s ease-out both;
-  }
+.page-leave-active {
+  animation: upwardsOut 0.1s ease-in both;
+}
 
-  .page-leave-active {
-    animation: upwardsOut 0.1s ease-in both;
-  }
-
-  .snap {
-    scroll-snap-align: center;
-  }
+.snap {
+  scroll-snap-align: center;
 }
 </style>

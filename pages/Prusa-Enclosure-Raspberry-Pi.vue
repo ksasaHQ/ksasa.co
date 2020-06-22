@@ -1,5 +1,5 @@
 <template lang="html">
-  <article class="Prusa-Enclosure-Raspberry-Pi">
+  <article id="Prusa-Enclosure-Raspberry-Pi">
     <section class="full-height snap">
       <v-lazy-image
         :src="
@@ -118,7 +118,10 @@ export default {
 </script>
 
 <style lang="scss">
-.Prusa-Enclosure-Raspberry-Pi {
+#Prusa-Enclosure-Raspberry-Pi {
+  h1 {
+    @include font-scale2;
+  }
   h1,
   h2,
   li {

@@ -1,5 +1,5 @@
 <template>
-  <div class="Zwoelf">
+  <div id="Zwoelf">
     <section class="landing chequered">
       <img
         class="image-frame"
@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.Zwoelf {
+#Zwoelf {
   // background-image: url('~assets/images/zwoelf/zwoelf-dots.svg?data');
   background-origin: border-box;
   background-size: 0.5rem;

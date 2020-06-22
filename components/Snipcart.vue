@@ -1,6 +1,6 @@
 <template>
   <div
-    class="snipcart"
+    id="snipcart"
     hidden
     data-api-key="M2YwOGIxZDYtNTE3NC00MDY0LTkxNTItOTMwOTViOWFlNjVhNjM2ODE4MTgxMzg0OTUwNjUz"
   ></div>

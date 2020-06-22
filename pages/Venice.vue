@@ -1,5 +1,5 @@
 <template>
-  <article class="Venice">
+  <article id="Venice">
     <h1 itemprop="headline">Urgent Matters: Castles Built on Sand</h1>
     <section class="full-height">
       <v-lazy-image
@@ -183,7 +183,7 @@
 </template>
 
 <style lang="scss">
-.Venice {
+#Venice {
   h1 {
     display: none;
   }
@@ -217,7 +217,7 @@
     align-content: center;
     background: hsl(0, 0, 95);
     flex-flow: row wrap;
-    //line-height: $scale2;
+    //line-height: $scale2 * 1rem;
 
     padding: 3rem calc(4.5vw + 1em) 7rem;
 
@@ -276,7 +276,8 @@
       }
 
       img {
-        box-shadow: $shadow-soft, $shadow-soft-outline;
+        box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.05),
+          0 0 0.05rem 0 rgba(0, 0, 0, 0.5);
         display: block;
         max-width: 10rem;
         min-width: 5rem;

@@ -1,5 +1,5 @@
 <template>
-  <div class="modal">
+  <div id="modal">
     <CloseBack />
     <nuxt />
   </div>
