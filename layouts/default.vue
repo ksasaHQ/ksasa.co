@@ -189,6 +189,11 @@ body {
     list-style-type: '—     ';
   }
 
+  video {
+    max-height: 75vh;
+    max-width: 80vw;
+  }
+
   .flex-row-wrap {
     display: flex;
     flex-flow: row wrap;

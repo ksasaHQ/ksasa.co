@@ -1,10 +1,18 @@
 <template>
   <div class="index">
     <section class="full-height">
-      <v-lazy-image
+      <!-- <v-lazy-image
         :src="require('~/assets/images/hero.jpg').src"
         sizes="100vw"
         :srcset="require('~/assets/images/hero.jpg').srcSet"
+      />
+    -->
+      <video
+        autoplay
+        controls
+        loop
+        src="~/assets/videos/Matternet-Access-Point/Matternet.mp4"
+        type="video/mp4"
       />
     </section>
     <section class="full-height">
