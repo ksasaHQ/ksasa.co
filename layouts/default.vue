@@ -140,7 +140,8 @@ section.full-height {
   justify-content: center;
   padding: 3rem 0;
 
-  img {
+  img,
+  video {
     background: white;
     max-height: 75vh;
     max-width: 80vw;
