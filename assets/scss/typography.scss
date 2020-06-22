@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('~assets/font/Inter-Light-BETA.woff2?v=3.11') format('woff2'),
+    url('~assets/font/Inter-Light-BETA.woff?v=3.11') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  font-feature-settings: var(--main-text-features);
+  src: url('~assets/font/Inter-Regular.woff2?v=3.11') format('woff2'),
+    url('~assets/font/Inter-Regular.woff?v=3.11') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  font-feature-settings: var(--main-text-features);
+  src: url('~assets/font/Inter-Italic.woff2?v=3.11') format('woff2'),
+    url('~assets/font/Inter-Italic.woff?v=3.11') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  font-feature-settings: var(--main-text-features);
+  src: url('~assets/font/Inter-Medium.woff2?v=3.11') format('woff2'),
+    url('~assets/font/Inter-Medium.woff?v=3.11') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  font-feature-settings: var(--main-text-features);
+  src: url('~assets/font/Inter-SemiBoldItalic.woff2?v=3.11') format('woff2'),
+    url('~assets/font/Inter-SemiBoldItalic.woff?v=3.11') format('woff');
+}
+
+:root {
+  --main-font-family: 'Inter', sans-serif;
+  --main-text-colour: black;
+  --main-text-features: 'liga', 'dlig', 'zero', 'ss03', 'cv02', 'cv03', 'cv04',
+    'cv07', 'cv08', 'cv09';
+  color: var(--main-text-colour);
+  font: {
+    family: var(--main-font-family);
+    weight: 400;
+    size: $rem;
+  }
+
+  line-height: strip-unit($scale2);
+
+  @media screen and (min-width: 750px) and (min-height: 400px) {
+    $rem: 20px;
+    font-size: $rem;
+  }
+  @media screen and (min-width: 1500px) {
+    $rem: 25px;
+    font-size: $rem;
+  }
+}
